@@ -1,0 +1,9 @@
+server:
+  port: 6868
+eureka:
+  client:
+    registerWithEureka:false
+
+  fetchRegistry:false
+  servuceUrl:
+    defaultZone:http://192.168.112.1:${server.port}/eureka/
